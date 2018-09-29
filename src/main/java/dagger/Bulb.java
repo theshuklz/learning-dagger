@@ -1,10 +1,12 @@
 package dagger;
 
+import javax.inject.Inject;
+
 public class Bulb {
 
     Button button;
-    String color;
 
+    @Inject
     public Bulb(Button button) {
         this.button = button;
     }
